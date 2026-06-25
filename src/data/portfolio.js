@@ -121,25 +121,25 @@ export const experiences = [
 
 export const skills = [
   // System Analysis
-  { name: "Requirement Analysis (BRD/FSD)", level: 92, category: "System Analysis" },
-  { name: "UML Diagrams (Use Case, Sequence, Activity)", level: 90, category: "System Analysis" },
-  { name: "ERD & Data Modeling", level: 88, category: "System Analysis" },
-  { name: "API Documentation & Specification", level: 90, category: "System Analysis" },
-  { name: "User Stories & RTM", level: 88, category: "System Analysis" },
+  { name: "Requirement Analysis (BRD/FSD)", years: 1, category: "System Analysis" },
+  { name: "UML Diagrams (Use Case, Sequence, Activity)", years: 1, category: "System Analysis" },
+  { name: "ERD & Data Modeling", years: 5, category: "System Analysis" },
+  { name: "API Documentation & Specification", years: 5, category: "System Analysis" },
+  { name: "User Stories & RTM", years: 1, category: "System Analysis" },
   // Backend
-  { name: "NestJS / AdonisJS", level: 88, category: "Backend" },
-  { name: "Laravel / CodeIgniter", level: 85, category: "Backend" },
-  { name: "Node.js / Express", level: 85, category: "Backend" },
-  { name: "TypeScript", level: 82, category: "Backend" },
-  { name: "PHP", level: 80, category: "Backend" },
+  { name: "NestJS / AdonisJS", years: 4, category: "Backend" },
+  { name: "Laravel / CodeIgniter", years: 5, category: "Backend" },
+  { name: "Node.js / Express", years: 7, category: "Backend" },
+  { name: "TypeScript", years: 3, category: "Backend" },
+  { name: "PHP", years: 5, category: "Backend" },
   // Database
-  { name: "PostgreSQL", level: 90, category: "Database" },
-  { name: "MySQL", level: 88, category: "Database" },
-  { name: "MongoDB", level: 75, category: "Database" },
+  { name: "PostgreSQL", years: 4, category: "Database" },
+  { name: "MySQL", years: 7, category: "Database" },
+  { name: "MongoDB", years: 2, category: "Database" },
   // Cloud & DevOps
-  { name: "AWS (EC2, RDS, Aurora, S3)", level: 78, category: "Cloud & DevOps" },
-  { name: "Docker", level: 78, category: "Cloud & DevOps" },
-  { name: "VPS Setup for API", level: 80, category: "Cloud & DevOps" },
+  { name: "AWS (EC2, RDS, Aurora, S3)", years: 3, category: "Cloud & DevOps" },
+  { name: "Docker", years: 3, category: "Cloud & DevOps" },
+  { name: "VPS Setup for API", years: 5, category: "Cloud & DevOps" },
 ]
 
 export const projects = [

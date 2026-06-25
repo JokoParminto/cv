@@ -108,16 +108,13 @@ const OTHER = projects.filter(p => !p.featured)
 const SKILLS_P1 = skills.slice(0, 9)
 const SKILLS_P2 = skills.slice(9)
 
-function SkillBar({ skill }) {
+function SkillChip({ skill }) {
   return (
-    <View style={s.skillRow}>
-      <View style={s.skillHdr}>
-        <Text style={s.skillName}>{skill.name}</Text>
-        <Text style={s.skillPct}>{skill.level}%</Text>
-      </View>
-      <View style={s.skillTrack}>
-        <View style={[s.skillFill, { width: `${skill.level}%` }]} />
-      </View>
+    <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', backgroundColor: '#eef2ff', borderRadius: 4, paddingTop: 4, paddingBottom: 4, paddingLeft: 7, paddingRight: 7, marginBottom: 4 }}>
+      <Text style={{ fontSize: 6.5, color: C.white, flex: 1, marginRight: 4 }}>{skill.name}</Text>
+      <Text style={{ fontSize: 6, color: C.primary, fontFamily: 'Helvetica-Bold', backgroundColor: '#e0e7ff', paddingHorizontal: 4, paddingVertical: 1.5, borderRadius: 3 }}>
+        {skill.years} yr{skill.years > 1 ? 's' : ''}
+      </Text>
     </View>
   )
 }
@@ -212,7 +209,7 @@ function Sidebar({ page }) {
 
           <Text style={s.secLabel}>Core Skills</Text>
           <View style={s.secBar} />
-          {SKILLS_P1.map(sk => <SkillBar key={sk.name} skill={sk} />)}
+          {SKILLS_P1.map(sk => <SkillChip key={sk.name} skill={sk} />)}
 
           <Text style={s.secLabel}>Education</Text>
           <View style={s.secBar} />
@@ -240,7 +237,7 @@ function Sidebar({ page }) {
 
           <Text style={s.secLabel}>Additional Skills</Text>
           <View style={s.secBar} />
-          {SKILLS_P2.map(sk => <SkillBar key={sk.name} skill={sk} />)}
+          {SKILLS_P2.map(sk => <SkillChip key={sk.name} skill={sk} />)}
 
           <Text style={s.secLabel}>Career Summary</Text>
           <View style={s.secBar} />
